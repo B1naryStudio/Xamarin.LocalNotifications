@@ -38,7 +38,7 @@
     <Compile Include="..\LocalNotifications.Plugin\CrossLocalNotifications.cs">
       <Link>CrossLocalNotifications.cs</Link>
     </Compile>
-    <Compile Include="LocalNotificationsImplementation.cs" />
+    <Compile Include="LocalNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

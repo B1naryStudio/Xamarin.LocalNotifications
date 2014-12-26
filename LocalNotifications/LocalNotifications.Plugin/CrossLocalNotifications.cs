@@ -8,30 +8,12 @@ namespace LocalNotifications.Plugin
   /// </summary>
   public class CrossLocalNotifications
   {
-    static Lazy<ILocalNotifications> Implementation = new Lazy<ILocalNotifications>(() => CreateLocalNotifications(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
-
-    /// <summary>
-    /// Current settings to use
-    /// </summary>
-    public static ILocalNotifications Current
-    {
-      get
-      {
-        var ret = Implementation.Value;
-        if (ret == null)
-        {
-          throw NotImplementedInReferenceAssembly();
-        }
-        return ret;
-      }
-    }
-
-    static ILocalNotifications CreateLocalNotifications()
+    public static ILocalNotifier CreateLocalNotifier()
     {
 #if PORTABLE
         return null;
 #else
-        return new LocalNotificationsImplementation();
+        return new LocalNotifier();
 #endif
     }
 

@@ -7,7 +7,11 @@ namespace LocalNotifications.Plugin
   /// <summary>
   /// Implementation for Feature
   /// </summary>
-  public class LocalNotificationsImplementation : ILocalNotifications
+  public class LocalNotifier : ILocalNotifier
   {
+      public void Notify(LocalNotification notification)
+      {
+          throw new NotImplementedException();
+      }
   }
 }

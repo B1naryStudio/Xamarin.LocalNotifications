@@ -7,7 +7,7 @@ namespace LocalNotifications.Plugin
   /// <summary>
   /// Implementation for LocalNotifications
   /// </summary>
-  public class LocalNotificationsImplementation : ILocalNotifications
+  public class LocalNotifierImplementation : ILocalNotifier
   {
   }
 }

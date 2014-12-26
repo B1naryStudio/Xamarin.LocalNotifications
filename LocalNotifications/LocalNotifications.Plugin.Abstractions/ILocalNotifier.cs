@@ -5,7 +5,8 @@ namespace LocalNotifications.Plugin.Abstractions
   /// <summary>
   /// Interface for LocalNotifications
   /// </summary>
-  public interface ILocalNotifications
+  public interface ILocalNotifier
   {
+      void Notify(LocalNotification notification);
   }
 }
