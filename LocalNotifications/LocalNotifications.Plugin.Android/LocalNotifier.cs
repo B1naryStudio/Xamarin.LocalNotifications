@@ -1,6 +1,7 @@
+using Android;
+using Android.App;
+using Android.Content;
 using LocalNotifications.Plugin.Abstractions;
-using System;
-
 
 namespace LocalNotifications.Plugin
 {
@@ -11,7 +12,27 @@ namespace LocalNotifications.Plugin
   {
       public void Notify(LocalNotification notification)
       {
-          throw new NotImplementedException();
+          var nativeNotification = createNativeNotification(notification);
+          var notificationManager = getNotificationManager();
+          
+          notificationManager.Notify(1, nativeNotification);
+      }
+
+      private NotificationManager getNotificationManager()
+      {
+          var notificationManager = Application.Context.GetSystemService(Context.NotificationService) as NotificationManager;
+          return notificationManager;
+      }
+
+      private Notification createNativeNotification(LocalNotification notification)
+      {
+          var builder = new Notification.Builder(Application.Context)
+              .SetContentTitle(notification.Title)
+              .SetContentText(notification.Text)
+              .SetSmallIcon(Resource.Drawable.IcDialogEmail);
+          
+          var nativeNotification = builder.Build();
+          return nativeNotification;
       }
   }
 }
