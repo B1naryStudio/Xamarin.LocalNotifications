@@ -23,5 +23,9 @@ namespace LocalNotifications.Plugin
           TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
       }
 
+      public void Cancel(int notificationId)
+      {
+          
+      }
   }
 }

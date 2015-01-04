@@ -18,6 +18,11 @@ namespace LocalNotifications.Plugin
           notificationManager.Notify(1, nativeNotification);
       }
 
+      public void Cancel(int notificationId)
+      {
+          throw new System.NotImplementedException();
+      }
+
       private NotificationManager getNotificationManager()
       {
           var notificationManager = Application.Context.GetSystemService(Context.NotificationService) as NotificationManager;

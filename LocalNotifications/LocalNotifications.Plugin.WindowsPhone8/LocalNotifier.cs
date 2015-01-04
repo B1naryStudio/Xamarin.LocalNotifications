@@ -19,6 +19,11 @@ namespace LocalNotifications.Plugin
           appTile.Update(tile);
       }
 
+      public void Cancel(int notificationId)
+      {
+          throw new System.NotImplementedException();
+      }
+
       private FlipTileData createFlipTile(LocalNotification notification)
       {
           var tile = new FlipTileData();

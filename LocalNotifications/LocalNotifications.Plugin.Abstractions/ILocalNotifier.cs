@@ -8,5 +8,7 @@ namespace LocalNotifications.Plugin.Abstractions
   public interface ILocalNotifier
   {
       void Notify(LocalNotification notification);
+
+      void Cancel(int notificationId);
   }
 }
