@@ -7,11 +7,15 @@ using LocalNotifications.Plugin.Abstractions;
 
 namespace LocalNotifications.Plugin
 {
-  /// <summary>
-  /// Implementation for Feature
-  /// </summary>
+    /// <summary>
+    /// Implementation of ILocalNotifier for Android
+    /// </summary>
   public class LocalNotifier : ILocalNotifier
   {
+      /// <summary>
+      /// Notifies the specified notification.
+      /// </summary>
+      /// <param name="notification">The notification.</param>
       public void Notify(LocalNotification notification)
       {
           var intent = createIntent(notification.Id);
@@ -26,6 +30,10 @@ namespace LocalNotifications.Plugin
           alarmManager.Set(AlarmType.RtcWakeup, triggerTime, pendingIntent);
       }
 
+      /// <summary>
+      /// Cancels the specified notification identifier.
+      /// </summary>
+      /// <param name="notificationId">The notification identifier.</param>
       public void Cancel(int notificationId)
       {
           var intent = createIntent(notificationId);

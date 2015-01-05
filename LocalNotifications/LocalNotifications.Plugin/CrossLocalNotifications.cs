@@ -4,10 +4,14 @@ using System;
 namespace LocalNotifications.Plugin
 {
   /// <summary>
-  /// Cross platform LocalNotifications implemenations
+  /// Cross platform LocalNotifications implementation
   /// </summary>
   public class CrossLocalNotifications
   {
+      /// <summary>
+      /// Creates the local notifier.
+      /// </summary>
+      /// <returns></returns>
     public static ILocalNotifier CreateLocalNotifier()
     {
 #if PORTABLE

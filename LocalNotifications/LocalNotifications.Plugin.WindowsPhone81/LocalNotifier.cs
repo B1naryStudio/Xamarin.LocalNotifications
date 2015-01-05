@@ -7,10 +7,14 @@ using LocalNotifications.Plugin.Abstractions;
 namespace LocalNotifications.Plugin
 {
   /// <summary>
-  /// Implementation for LocalNotifications
+  /// Implementation of ILocalNotifier for Windows Phone 8.1 and WindowsStore
   /// </summary>
   public class LocalNotifier : ILocalNotifier
   {
+      /// <summary>
+      /// Notifies the specified notification.
+      /// </summary>
+      /// <param name="notification">The notification.</param>
       public void Notify(LocalNotification notification)
       {
           var tileXml = TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150Text02);
@@ -31,6 +35,10 @@ namespace LocalNotifications.Plugin
           TileUpdateManager.CreateTileUpdaterForApplication().AddToSchedule(scheduledTileNotification);
       }
 
+      /// <summary>
+      /// Cancels the specified notification identifier.
+      /// </summary>
+      /// <param name="notificationId">The notification identifier.</param>
       public void Cancel(int notificationId)
       {
           var scheduledNotifications = TileUpdateManager.CreateTileUpdaterForApplication().GetScheduledTileNotifications();

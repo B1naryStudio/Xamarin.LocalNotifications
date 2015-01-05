@@ -10,13 +10,17 @@ using MonoTouch.UIKit;
 
 namespace LocalNotifications.Plugin
 {
-  /// <summary>
-  /// Implementation for LocalNotifications
-  /// </summary>
-  public class LocalNotifier : ILocalNotifier
+    /// <summary>
+    /// Implementation of ILocalNotifier for iOS
+    /// </summary>
+    public class LocalNotifier : ILocalNotifier
   {
       private const string NotificationKey = "LocalNotificationKey";
 
+      /// <summary>
+      /// Notifies the specified notification.
+      /// </summary>
+      /// <param name="notification">The notification.</param>
       public void Notify(LocalNotification notification)
       {
           var nativeNotification = createNativeNotification(notification);
@@ -24,6 +28,10 @@ namespace LocalNotifications.Plugin
           UIApplication.SharedApplication.ScheduleLocalNotification(nativeNotification);
       }
 
+      /// <summary>
+      /// Cancels the specified notification identifier.
+      /// </summary>
+      /// <param name="notificationId">The notification identifier.</param>
       public void Cancel(int notificationId)
       {
           var notifications = UIApplication.SharedApplication.ScheduledLocalNotifications;
