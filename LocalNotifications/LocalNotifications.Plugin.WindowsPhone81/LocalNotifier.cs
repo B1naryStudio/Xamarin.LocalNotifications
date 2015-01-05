@@ -1,8 +1,8 @@
+using System;
+using System.Linq;
 using Windows.Data.Xml.Dom;
 using Windows.UI.Notifications;
 using LocalNotifications.Plugin.Abstractions;
-using System;
-
 
 namespace LocalNotifications.Plugin
 {
@@ -19,13 +19,23 @@ namespace LocalNotifications.Plugin
           ((XmlElement)tileTitle[0]).InnerText = notification.Title;
           ((XmlElement)tileTitle[1]).InnerText = notification.Text;
 
-          var tileNotification = new TileNotification(tileXml);
-          TileUpdateManager.CreateTileUpdaterForApplication().Update(tileNotification);
+          var scheduledTileNotification = new ScheduledTileNotification(tileXml, notification.NotifyTime)
+          {
+              Id = notification.Id.ToString()
+          };
+          TileUpdateManager.CreateTileUpdaterForApplication().AddToSchedule(scheduledTileNotification);
       }
 
       public void Cancel(int notificationId)
       {
+          var scheduledNotifications = TileUpdateManager.CreateTileUpdaterForApplication().GetScheduledTileNotifications();
+          var notification =
+              scheduledNotifications.FirstOrDefault(n => n.Id.Equals(notificationId.ToString(), StringComparison.OrdinalIgnoreCase));
           
+          if (notification != null)
+          {
+              TileUpdateManager.CreateTileUpdaterForApplication().RemoveFromSchedule(notification);
+          }
       }
   }
 }
