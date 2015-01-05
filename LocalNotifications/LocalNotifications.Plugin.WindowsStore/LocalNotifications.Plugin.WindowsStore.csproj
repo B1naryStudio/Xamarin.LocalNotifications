@@ -109,10 +109,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\LocalNotifications.Plugin.WindowsPhone81\LocalNotifier.cs">
+      <Link>LocalNotifier.cs</Link>
+    </Compile>
     <Compile Include="..\LocalNotifications.Plugin\CrossLocalNotifications.cs">
       <Link>CrossLocalNotifications.cs</Link>
     </Compile>
-    <Compile Include="LocalNotificationsImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

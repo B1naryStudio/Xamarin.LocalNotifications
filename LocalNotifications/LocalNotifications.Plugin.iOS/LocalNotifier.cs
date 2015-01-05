@@ -1,7 +1,12 @@
 using System.Linq;
 using LocalNotifications.Plugin.Abstractions;
+#if __UNIFIED__
+using UIKit;
+using Foundation;
+#else
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+#endif
 
 namespace LocalNotifications.Plugin
 {

@@ -19,10 +19,15 @@ namespace LocalNotifications.Plugin
           ((XmlElement)tileTitle[0]).InnerText = notification.Title;
           ((XmlElement)tileTitle[1]).InnerText = notification.Text;
 
-          var scheduledTileNotification = new ScheduledTileNotification(tileXml, notification.NotifyTime)
+          var correctedTime = notification.NotifyTime <= DateTime.Now
+              ? DateTime.Now.AddMilliseconds(100)
+              : notification.NotifyTime;
+
+          var scheduledTileNotification = new ScheduledTileNotification(tileXml, correctedTime)
           {
               Id = notification.Id.ToString()
           };
+
           TileUpdateManager.CreateTileUpdaterForApplication().AddToSchedule(scheduledTileNotification);
       }
 
