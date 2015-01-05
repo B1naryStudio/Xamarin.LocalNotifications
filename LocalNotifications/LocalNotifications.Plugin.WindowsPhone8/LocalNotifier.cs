@@ -1,5 +1,6 @@
 using System.Linq;
 using LocalNotifications.Plugin.Abstractions;
+using Microsoft.Phone.Scheduler;
 using Microsoft.Phone.Shell;
 
 namespace LocalNotifications.Plugin
@@ -17,6 +18,10 @@ namespace LocalNotifications.Plugin
 
           var tile = createFlipTile(notification);
           appTile.Update(tile);
+          
+          var shellTileSchedule = new ShellTileSchedule(appTile);
+          
+          shellTileSchedule.StartTime = notification.NotifyTime;
       }
 
       public void Cancel(int notificationId)
@@ -26,11 +31,13 @@ namespace LocalNotifications.Plugin
 
       private FlipTileData createFlipTile(LocalNotification notification)
       {
-          var tile = new FlipTileData();
+          var tile = new FlipTileData
+          {
+              BackTitle = notification.Title,
+              BackContent = notification.Text,
+              WideBackContent = notification.Text
+          };
 
-          tile.BackTitle = notification.Title;
-          tile.BackContent = notification.Text;
-          tile.WideBackContent = notification.Text;
 
           return tile;
       }
