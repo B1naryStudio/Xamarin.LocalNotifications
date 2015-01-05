@@ -41,5 +41,10 @@ var notifier = CrossLocalNotifications.CreateLocalNotifier();
 notifier.Notify(notification)
 ```
 
+**Canceling notification**
+```
+notifier.Cancel(notification.Id)
+```
+
 #### Contributors
 * [sbondini](https://github.com/sbondini)
