@@ -11,6 +11,7 @@ Simple cross platform plugin to work with mobile local notifications
 * Xamarin.iOS (x64 Unified)
 * Xamarin.Android
 * Windows Phone 8.1 RT
+* Windows Store 8.0+
 
 ### API Usage
 
