@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Xamarin.Plugin.LocalNotifications</id>
+       <version>1.0.0.0</version>
+       <title>Local Notifications Plugin for Xamarin and Windows</title>
+       <authors>James Montemagno</authors>
+       <owners>James Montemagno</owners>
+     <licenseUrl>https://github.com/sbondini/Xamarin.LocalNotifications/blob/master/LICENSE.md</licenseUrl>
+     <projectUrl>https://github.com/sbondini/Xamarin.LocalNotifications</projectUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Send Local Notifications across iOS, Android, Windows Phone, and Windows from a single API. 
+         
+         Ability to create, send and cancel local notifications.
+       </description>
+       <summary>Create and parameterize local notifications, schedule them or send immediately, cancel if required</summary>
+       <tags>xamarin, pcl, xam.pcl, local notification, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios</tags>
+       <dependencies>
+       </dependencies>
+   </metadata>
+   <files>
+<!--Core-->
+     <file src="LocalNotifications\LocalNotifications.Plugin\bin\Release\LocalNotifications.Plugin.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin\bin\Release\LocalNotifications.Plugin.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin\bin\Release\LocalNotifications.Plugin.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.pdb" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.pdb" />
+
+     <!--Win Phone 81-->
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsPhone81\bin\Release\LocalNotifications.Plugin.dll" target="lib\wpa81\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsPhone81\bin\Release\LocalNotifications.Plugin.xml" target="lib\wpa81\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsPhone81\bin\Release\LocalNotifications.Plugin.pdb" target="lib\wpa81\LocalNotifications.Plugin.pdb" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\wpa81\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\wpa81\LocalNotifications.Plugin.Abstractions.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\wpa81\LocalNotifications.Plugin.Abstractions.pdb" />
+
+
+     <!--WinStore-->
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsStore\bin\Release\LocalNotifications.Plugin.dll" target="lib\win8\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsStore\bin\Release\LocalNotifications.Plugin.xml" target="lib\win8\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.WindowsStore\bin\Release\LocalNotifications.Plugin.pdb" target="lib\win8\LocalNotifications.Plugin.pdb" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\win8\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\win8\LocalNotifications.Plugin.Abstractions.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\win8\LocalNotifications.Plugin.Abstractions.pdb" />
+
+
+     <!--Xamarin.Android-->
+     <file src="LocalNotifications\LocalNotifications.Plugin.Android\bin\Release\LocalNotifications.Plugin.dll" target="lib\MonoAndroid10\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Android\bin\Release\LocalNotifications.Plugin.xml" target="lib\MonoAndroid10\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Android\bin\Release\LocalNotifications.Plugin.pdb" target="lib\MonoAndroid10\LocalNotifications.Plugin.pdb" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\MonoAndroid10\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\MonoAndroid10\LocalNotifications.Plugin.Abstractions.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\LocalNotifications.Plugin.Abstractions.pdb" />
+
+     <!--Xamarin.iOS-->
+     <file src="LocalNotifications\LocalNotifications.Plugin.iOS\bin\iPhone\Release\LocalNotifications.Plugin.dll" target="lib\MonoTouch10\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.iOS\bin\iPhone\Release\LocalNotifications.Plugin.xml" target="lib\MonoTouch10\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\MonoTouch10\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\MonoTouch10\LocalNotifications.Plugin.Abstractions.xml" />
+	 <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\MonoTouch10\LocalNotifications.Plugin.Abstractions.pdb" />
+     
+     <!--Xamarin.iOS Unified-->
+     <file src="LocalNotifications\LocalNotifications.Plugin.iOSUnified\bin\iPhone\Release\LocalNotifications.Plugin.dll" target="lib\Xamarin.iOS10\LocalNotifications.Plugin.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.iOSUnified\bin\iPhone\Release\LocalNotifications.Plugin.xml" target="lib\Xamarin.iOS10\LocalNotifications.Plugin.xml" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.dll" />
+     <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.xml" target="lib\Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.xml" />
+	 <file src="LocalNotifications\LocalNotifications.Plugin.Abstractions\bin\Release\LocalNotifications.Plugin.Abstractions.pdb" target="lib\Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.pdb" />
+	 
+   </files>
+</package>
