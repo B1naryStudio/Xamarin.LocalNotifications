@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xamarin.Plugin.LocalNotifications</id>
-       <version>1.0.0.2</version>
+       <version>1.0.0.3</version>
        <title>Local Notifications Plugin for Xamarin and Windows</title>
        <authors>Saveliy Bondini</authors>
        <owners>Saveliy Bondini</owners>
@@ -15,7 +15,7 @@
          Ability to create, send and cancel local notifications.
        </description>
        <summary>Create and parameterize local notifications, schedule them or send immediately, cancel if required</summary>
-       <tags>xamarin, pcl, xam.pcl, local notification, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios</tags>
+       <tags>xamarin, pcl, xam.pcl, local notification, windows phone, winphone, wp8, winrt, android, windows, ios</tags>
        <dependencies>
        </dependencies>
    </metadata>
