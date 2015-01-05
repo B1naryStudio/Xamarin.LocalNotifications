@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
        <id>Xamarin.Plugin.LocalNotifications</id>
-       <version>1.0.0.0</version>
+       <version>1.0.0.2</version>
        <title>Local Notifications Plugin for Xamarin and Windows</title>
-       <authors>James Montemagno</authors>
-       <owners>James Montemagno</owners>
-     <licenseUrl>https://github.com/sbondini/Xamarin.LocalNotifications/blob/master/LICENSE.md</licenseUrl>
-     <projectUrl>https://github.com/sbondini/Xamarin.LocalNotifications</projectUrl>
+       <authors>Saveliy Bondini</authors>
+       <owners>Saveliy Bondini</owners>
+     <licenseUrl>https://github.com/B1naryStudio/Xamarin.LocalNotifications/blob/master/LICENSE.md</licenseUrl>
+     <projectUrl>https://github.com/B1naryStudio/Xamarin.LocalNotifications</projectUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
          Send Local Notifications across iOS, Android, Windows Phone, and Windows from a single API. 
