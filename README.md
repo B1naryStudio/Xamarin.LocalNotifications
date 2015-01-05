@@ -6,7 +6,7 @@ Simple cross platform plugin to work with mobile local notifications
 * Available on NuGet: https://www.nuget.org/packages/Xamarin.Plugin.LocalNotifications/
 * Install into your PCL project and Client projects.
 
-**Android specific** You must add this line to application manifest within <application></application> tag:
+**Android specific** You must add this line to application manifest within < application > tag:
 ```
 <receiver android:name="localnotifications.plugin.ScheduledAlarmHandler" android:enabled="true"></receiver>
 ```
