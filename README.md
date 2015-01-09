@@ -3,7 +3,7 @@ Local Notifications Plugin for Xamarin and Windows
 Simple cross platform plugin to work with mobile local notifications
 
 ### Setup
-* Available on NuGet: https://www.nuget.org/packages/Xamarin.Plugin.LocalNotifications/
+* Available on NuGet: https://www.nuget.org/packages/Xam.Plugin.LocalNotifications/
 * Install into your PCL project and Client projects.
 
 **Android specific** You must add this line to application manifest within < application > tag:
