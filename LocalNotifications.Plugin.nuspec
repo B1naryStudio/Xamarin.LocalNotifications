@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Xamarin.Plugin.LocalNotifications</id>
-       <version>1.0.0.3</version>
+       <id>Xam.Plugin.LocalNotifications</id>
+       <version>1.0.0.0</version>
        <title>Local Notifications Plugin for Xamarin and Windows</title>
        <authors>Saveliy Bondini</authors>
        <owners>Saveliy Bondini</owners>
