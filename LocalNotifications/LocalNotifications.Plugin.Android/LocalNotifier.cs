@@ -3,6 +3,7 @@ using System.IO;
 using System.Xml.Serialization;
 using Android.App;
 using Android.Content;
+using Android.OS;
 using LocalNotifications.Plugin.Abstractions;
 
 namespace LocalNotifications.Plugin
@@ -27,7 +28,7 @@ namespace LocalNotifications.Plugin
           var triggerTime = notifyTimeInMilliseconds(notification.NotifyTime);
           var alarmManager = getAlarmManager();
 
-          alarmManager.Set(AlarmType.RtcWakeup, triggerTime, pendingIntent);
+          alarmManager.Set(AlarmType.ElapsedRealtime, SystemClock.ElapsedRealtime() + triggerTime, pendingIntent);
       }
 
       /// <summary>
@@ -48,8 +49,7 @@ namespace LocalNotifications.Plugin
 
       private Intent createIntent(int notificationId)
       {
-          return new Intent(Application.Context, typeof (ScheduledAlarmHandler))
-              .SetAction("LocalNotifierIntent" + notificationId);
+          return new Intent(Application.Context, typeof (ScheduledAlarmHandler));
       }
 
       private NotificationManager getNotificationManager()
@@ -76,11 +76,12 @@ namespace LocalNotifications.Plugin
 
       private long notifyTimeInMilliseconds(DateTime notifyTime)
       {
-          var utcTime = TimeZoneInfo.ConvertTimeToUtc(notifyTime);
-          var epochDifference = (new DateTime(1970, 1, 1) - DateTime.MinValue).TotalSeconds;
+          //var utcTime = TimeZoneInfo.ConvertTimeToUtc(notifyTime);
+          //var epochDifference = (new DateTime(1970, 1, 1) - DateTime.MinValue).TotalSeconds;
 
-          var utcAlarmTimeInMillis = utcTime.AddSeconds(-epochDifference).Ticks / 10000;
-          return utcAlarmTimeInMillis;
+          //var utcAlarmTimeInMillis = utcTime.AddSeconds(-epochDifference).Ticks / 10000;
+          var utcAlarmTimeInMillis = (notifyTime.ToUniversalTime() - DateTime.UtcNow).TotalMilliseconds;
+          return (long)utcAlarmTimeInMillis;
       }
   }
 }

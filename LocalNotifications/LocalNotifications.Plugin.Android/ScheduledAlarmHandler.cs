@@ -4,10 +4,12 @@ using System.Xml.Serialization;
 using Android;
 using Android.App;
 using Android.Content;
+using Android.Runtime;
 using LocalNotifications.Plugin.Abstractions;
 
 namespace LocalNotifications.Plugin
 {
+    [BroadcastReceiver]
     public class ScheduledAlarmHandler : BroadcastReceiver
     {
         public const string LocalNotificationKey = "LocalNotification";
