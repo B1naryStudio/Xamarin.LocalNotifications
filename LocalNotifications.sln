@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Samples.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Samples.Forms", "Samples\LocalNotifications.Samples.Forms\LocalNotifications.Samples.Forms\LocalNotifications.Samples.Forms.csproj", "{0B65C2D9-A170-4C8B-A598-CFAB9E38F150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Samples.Droid", "Samples\LocalNotifications.Samples.Droid\LocalNotifications.Samples.Droid\LocalNotifications.Samples.Droid.csproj", "{CDC1A67E-C8AF-4E63-A729-664EA9B5B289}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Samples.Droid", "Samples\LocalNotifications.Samples.Droid\LocalNotifications.Samples.Droid.csproj", "{CDC1A67E-C8AF-4E63-A729-664EA9B5B289}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
