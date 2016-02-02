@@ -50,7 +50,7 @@ namespace LocalNotifications.Plugin
           {
               AlertAction = notification.Title,
               AlertBody = notification.Text,
-              FireDate = notification.NotifyTime,
+              FireDate = notification.NotifyTime.ToNSDate(),
               UserInfo = NSDictionary.FromObjectAndKey(NSObject.FromObject(notification.Id), NSObject.FromObject(NotificationKey))
           };
 

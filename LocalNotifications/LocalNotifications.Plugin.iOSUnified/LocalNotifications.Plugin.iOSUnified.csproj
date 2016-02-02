@@ -35,6 +35,9 @@
     <DocumentationFile>bin\iPhone\Release\LocalNotifications.Plugin.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\LocalNotifications.Plugin.iOS\DateTimeExtensions.cs">
+      <Link>DateTimeExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\LocalNotifications.Plugin.iOS\LocalNotifier.cs">
       <Link>LocalNotifier.cs</Link>
     </Compile>
@@ -51,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Plugin", "LocalNotifications\LocalNotifications.Plugin\LocalNotifications.Plugin.csproj", "{A6FCEF44-D2BA-42C7-B3CB-13667BCD7B54}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Plugin.WindowsPhone81", "LocalNotifications\LocalNotifications.Plugin.WindowsPhone81\LocalNotifications.Plugin.WindowsPhone81.csproj", "{7169373F-0B82-4E5D-9129-7CC3065B90FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Plugin.WindowsStore", "LocalNotifications\LocalNotifications.Plugin.WindowsStore\LocalNotifications.Plugin.WindowsStore.csproj", "{ED9A4CA1-C04C-457D-9A2E-7995CCF12356}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{D03666C3-0716-45FE-A891-B51CC27D549A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalNotifications.Samples.iOS", "Samples\LocalNotifications.Samples.iOS\LocalNotifications.Samples.iOS.csproj", "{C35DDA36-12FA-40D1-9733-1F55CB9CC117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -327,8 +331,51 @@ Global
 		{ED9A4CA1-C04C-457D-9A2E-7995CCF12356}.Release|x64.Build.0 = Release|x64
 		{ED9A4CA1-C04C-457D-9A2E-7995CCF12356}.Release|x86.ActiveCfg = Release|x86
 		{ED9A4CA1-C04C-457D-9A2E-7995CCF12356}.Release|x86.Build.0 = Release|x86
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|Mixed Platforms.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|Mixed Platforms.Build.0 = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|x64.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Ad-Hoc|x86.ActiveCfg = Ad-Hoc|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|ARM.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|Mixed Platforms.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|Mixed Platforms.Build.0 = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|x64.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.AppStore|x86.ActiveCfg = AppStore|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|ARM.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|x64.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Debug|x86.ActiveCfg = Debug|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|ARM.ActiveCfg = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|iPhone.Build.0 = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|Mixed Platforms.ActiveCfg = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|Mixed Platforms.Build.0 = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|x64.ActiveCfg = Release|iPhone
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117}.Release|x86.ActiveCfg = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C35DDA36-12FA-40D1-9733-1F55CB9CC117} = {D03666C3-0716-45FE-A891-B51CC27D549A}
 	EndGlobalSection
 EndGlobal
